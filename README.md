@@ -104,6 +104,11 @@ Si todo esta bien, veras el mensaje **Bot listo como ...**. Deja esa ventana abi
 - **"node no se reconoce"** → Node.js no se instalo bien. Reinstala desde <https://nodejs.org/>.
 - **"ffmpeg no se reconoce"** → FFmpeg no esta instalado. Repite el Paso 3.
 - **"Faltan variables de entorno"** → Revisa el archivo `.env` y completa los valores.
+- **"La ejecucion de scripts esta deshabilitada" (Windows PowerShell)** → abre PowerShell como administrador y ejecuta:
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Luego cierra y vuelve a abrir PowerShell e intenta de nuevo.
 
 ## Como agregar ElMusicologo a tu servidor
 
