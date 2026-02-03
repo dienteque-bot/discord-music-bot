@@ -30,39 +30,92 @@ DISCORD_GUILD_ID=tu_guild_id
 npm start
 ```
 
-## Instalacion facil (sin conocimientos tecnicos)
+## Instalacion facil (paso a paso, sin experiencia)
 
-Si no sabes programar ni usar GitHub, puedes dejar el bot funcionando siguiendo estos pasos simples:
+Si no sabes programar ni usar GitHub, sigue exactamente estos pasos. Esta pensado para principiantes.
 
-1. Descarga el proyecto como archivo ZIP:
-   - En la pagina del repositorio, haz clic en **Code** → **Download ZIP**.
-   - Descomprime el ZIP en una carpeta de tu computadora (por ejemplo, `ElMusicologo`).
-2. Instala Node.js:
-   - Ve a <https://nodejs.org/> y descarga la version LTS.
-   - Instalala con los valores por defecto.
-3. Instala FFmpeg:
-   - **Windows:** descarga FFmpeg desde <https://ffmpeg.org/download.html> o usa un instalador como `winget install ffmpeg`.
-   - **macOS:** `brew install ffmpeg`
-   - **Linux:** `sudo apt install ffmpeg` (o el gestor de paquetes de tu distro).
-4. Abre una terminal en la carpeta del proyecto:
-   - **Windows:** abre la carpeta, haz clic derecho y selecciona *Abrir en Terminal*.
-   - **macOS/Linux:** abre la carpeta y usa *Terminal*.
-5. Instala las dependencias:
+### Paso 1: Descargar el proyecto
+
+1. En la pagina del repositorio, haz clic en **Code** → **Download ZIP**.
+2. Descomprime el ZIP en una carpeta facil (por ejemplo, `Escritorio/ElMusicologo`).
+
+### Paso 2: Instalar Node.js
+
+1. Ve a <https://nodejs.org/> y descarga la version **LTS**.
+2. Instalala con los valores por defecto.
+3. Verifica que se instalo abriendo una terminal y escribiendo:
+
+```bash
+node -v
+```
+
+Deberias ver un numero de version (por ejemplo, `v20.x`).
+
+### Paso 3: Instalar FFmpeg (obligatorio para que suene)
+
+- **Windows (facil):** abre PowerShell y ejecuta:
+
+```bash
+winget install ffmpeg
+```
+
+- **macOS:** abre Terminal y ejecuta:
+
+```bash
+brew install ffmpeg
+```
+
+- **Linux (Ubuntu/Debian):**
+
+```bash
+sudo apt update
+sudo apt install ffmpeg
+```
+
+### Paso 4: Abrir la carpeta del bot en la terminal
+
+1. Abre la carpeta donde descomprimiste el ZIP.
+2. Haz clic derecho y selecciona **Abrir en Terminal** (Windows/macOS/Linux).
+3. Asegurate de ver archivos como `package.json` y `src/`.
+
+### Paso 5: Instalar dependencias
+
+En la terminal, ejecuta:
 
 ```bash
 npm install
 ```
 
-6. Crea el archivo `.env`:
-   - Copia `.env.example` y renombralo a `.env`.
-   - Abre `.env` y pega tus datos (`DISCORD_TOKEN`, `DISCORD_CLIENT_ID`, `DISCORD_GUILD_ID`).
-7. Inicia el bot:
+Espera a que termine (puede tardar varios minutos).
+
+### Paso 6: Crear el archivo .env
+
+1. Dentro de la carpeta del proyecto, busca `.env.example`.
+2. Copialo y cambiale el nombre a `.env`.
+3. Abre `.env` con un editor de texto (Bloc de notas, TextEdit, etc.).
+4. Coloca tus datos asi:
+
+```
+DISCORD_TOKEN=tu_token
+DISCORD_CLIENT_ID=tu_client_id
+DISCORD_GUILD_ID=tu_guild_id
+```
+
+### Paso 7: Iniciar el bot
+
+En la terminal, ejecuta:
 
 ```bash
 npm start
 ```
 
-Cuando veas el mensaje **Bot listo como ...** el bot ya esta listo para usarse en tu servidor.
+Si todo esta bien, veras el mensaje **Bot listo como ...**. Deja esa ventana abierta mientras uses el bot.
+
+### Si algo falla (soluciones rapidas)
+
+- **"node no se reconoce"** → Node.js no se instalo bien. Reinstala desde <https://nodejs.org/>.
+- **"ffmpeg no se reconoce"** → FFmpeg no esta instalado. Repite el Paso 3.
+- **"Faltan variables de entorno"** → Revisa el archivo `.env` y completa los valores.
 
 ## Como agregar ElMusicologo a tu servidor
 
