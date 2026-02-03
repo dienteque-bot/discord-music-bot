@@ -69,6 +69,19 @@ sudo apt install ffmpeg
 1. Abre la carpeta donde descomprimiste el ZIP.
 2. Haz clic derecho y selecciona **Abrir en Terminal** (Windows/macOS/Linux).
 3. Asegurate de ver archivos como `package.json` y `src/`.
+4. Si no ves esos archivos, significa que la terminal esta en otra carpeta. Escribe esto para entrar a la carpeta correcta:
+
+- **Windows:**
+
+cd "%USERPROFILE%\Escritorio\ElMusicologo"
+dir
+
+- **macOS/Linux:**
+
+cd ~/Escritorio/ElMusicologo
+ls
+
+Si ves `package.json`, ya estas en la carpeta correcta.
 
 ### Paso 5: Instalar dependencias
 
