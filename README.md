@@ -30,6 +30,40 @@ DISCORD_GUILD_ID=tu_guild_id
 npm start
 ```
 
+## Instalacion facil (sin conocimientos tecnicos)
+
+Si no sabes programar ni usar GitHub, puedes dejar el bot funcionando siguiendo estos pasos simples:
+
+1. Descarga el proyecto como archivo ZIP:
+   - En la pagina del repositorio, haz clic en **Code** → **Download ZIP**.
+   - Descomprime el ZIP en una carpeta de tu computadora (por ejemplo, `ElMusicologo`).
+2. Instala Node.js:
+   - Ve a <https://nodejs.org/> y descarga la version LTS.
+   - Instalala con los valores por defecto.
+3. Instala FFmpeg:
+   - **Windows:** descarga FFmpeg desde <https://ffmpeg.org/download.html> o usa un instalador como `winget install ffmpeg`.
+   - **macOS:** `brew install ffmpeg`
+   - **Linux:** `sudo apt install ffmpeg` (o el gestor de paquetes de tu distro).
+4. Abre una terminal en la carpeta del proyecto:
+   - **Windows:** abre la carpeta, haz clic derecho y selecciona *Abrir en Terminal*.
+   - **macOS/Linux:** abre la carpeta y usa *Terminal*.
+5. Instala las dependencias:
+
+```bash
+npm install
+```
+
+6. Crea el archivo `.env`:
+   - Copia `.env.example` y renombralo a `.env`.
+   - Abre `.env` y pega tus datos (`DISCORD_TOKEN`, `DISCORD_CLIENT_ID`, `DISCORD_GUILD_ID`).
+7. Inicia el bot:
+
+```bash
+npm start
+```
+
+Cuando veas el mensaje **Bot listo como ...** el bot ya esta listo para usarse en tu servidor.
+
 ## Como agregar ElMusicologo a tu servidor
 
 1. Entra a <https://discord.com/developers/applications> y crea una aplicacion.
