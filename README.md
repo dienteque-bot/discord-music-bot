@@ -43,11 +43,9 @@ Si no sabes programar ni usar GitHub, sigue exactamente estos pasos. Esta pensad
 
 1. Ve a <https://nodejs.org/> y descarga la version **LTS**.
 2. Instalala con los valores por defecto.
-3. Verifica que se instalo abriendo una terminal y escribiendo:
+3. Verifica que se instalo abriendo una terminal y escribiendo (sin copiar la palabra `bash`):
 
-```bash
 node -v
-```
 
 Deberias ver un numero de version (por ejemplo, `v20.x`).
 
@@ -55,22 +53,16 @@ Deberias ver un numero de version (por ejemplo, `v20.x`).
 
 - **Windows (facil):** abre PowerShell y ejecuta:
 
-```bash
 winget install ffmpeg
-```
 
 - **macOS:** abre Terminal y ejecuta:
 
-```bash
 brew install ffmpeg
-```
 
 - **Linux (Ubuntu/Debian):**
 
-```bash
-sudo apt update
+sudo apt update  
 sudo apt install ffmpeg
-```
 
 ### Paso 4: Abrir la carpeta del bot en la terminal
 
@@ -82,9 +74,7 @@ sudo apt install ffmpeg
 
 En la terminal, ejecuta:
 
-```bash
 npm install
-```
 
 Espera a que termine (puede tardar varios minutos).
 
@@ -105,9 +95,7 @@ DISCORD_GUILD_ID=tu_guild_id
 
 En la terminal, ejecuta:
 
-```bash
 npm start
-```
 
 Si todo esta bien, veras el mensaje **Bot listo como ...**. Deja esa ventana abierta mientras uses el bot.
 
