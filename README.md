@@ -131,6 +131,10 @@ Luego cierra y vuelve a abrir PowerShell e intenta de nuevo.
   5. **Comprueba que el bot esta conectado:** en Discord debe aparecer en la lista de usuarios del servidor.
 
 Si sigue sin salir el mensaje, copia la ultima linea del error de la terminal para revisarla.
+- **"No encontre resultados" con links de YouTube o Spotify** → instala los extractores de Discord Player:
+  1. Ejecuta `npm install` (esto instala `@discord-player/extractor`).
+  2. Reinicia el bot con `npm start`.
+  3. Asegurate de usar links completos (por ejemplo, `https://www.youtube.com/watch?v=...`).
 
 ## Como agregar ElMusicologo a tu servidor
 

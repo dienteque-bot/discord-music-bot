@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import { Client, EmbedBuilder, GatewayIntentBits, REST, Routes, SlashCommandBuilder } from 'discord.js';
 import { Player } from 'discord-player';
+import { SoundCloudExtractor, SpotifyExtractor, YoutubeExtractor } from '@discord-player/extractor';
 
 const { DISCORD_TOKEN, DISCORD_CLIENT_ID, DISCORD_GUILD_ID } = process.env;
 
@@ -13,6 +14,9 @@ const client = new Client({
 });
 
 const player = new Player(client);
+await player.extractors.register(YoutubeExtractor, {});
+await player.extractors.register(SpotifyExtractor, {});
+await player.extractors.register(SoundCloudExtractor, {});
 const leaveTimers = new Map();
 
 const commands = [
