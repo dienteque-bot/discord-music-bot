@@ -122,6 +122,7 @@ Si todo esta bien, veras el mensaje **Bot listo como ...**. Deja esa ventana abi
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Luego cierra y vuelve a abrir PowerShell e intenta de nuevo.
+- **"Cannot find dotenv"** → no se instalaron las dependencias. Ejecuta `npm install` dentro de la carpeta donde esta `package.json` y vuelve a ejecutar `npm start`.
 
 ## Como agregar ElMusicologo a tu servidor
 
