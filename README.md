@@ -123,6 +123,14 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Luego cierra y vuelve a abrir PowerShell e intenta de nuevo.
 - **"Cannot find dotenv"** → no se instalaron las dependencias. Ejecuta `npm install` dentro de la carpeta donde esta `package.json` y vuelve a ejecutar `npm start`.
+- **No aparece "Bot listo como ..." y ves un `PUT` con una URL** → eso es el registro de comandos. Revisa lo siguiente:
+  1. **Token y IDs correctos:** abre el archivo `.env` y confirma que `DISCORD_TOKEN`, `DISCORD_CLIENT_ID` y `DISCORD_GUILD_ID` no tienen espacios ni comillas.
+  2. **Reinicia el bot:** cierra la terminal y ejecuta de nuevo `npm start`.
+  3. **Permisos del bot:** en el portal de Discord, revisa que el bot tenga el scope `applications.commands` y permisos de voz.
+  4. **Verifica el guild ID:** usa el ID del servidor donde invitaste el bot.
+  5. **Comprueba que el bot esta conectado:** en Discord debe aparecer en la lista de usuarios del servidor.
+
+Si sigue sin salir el mensaje, copia la ultima linea del error de la terminal para revisarla.
 
 ## Como agregar ElMusicologo a tu servidor
 
